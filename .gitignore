@@ -45,8 +45,10 @@ nosetests.xml
 ^static/
 locale/
 media
-gallery/settings/local.py
+api_example/settings/local.py
 staticfiles
 dev.yml
 .env
+
+*.sqlite3
 
