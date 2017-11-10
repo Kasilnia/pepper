@@ -20,6 +20,7 @@ class IndexView(TemplateView):
 
 
 class ImageView(View):
+    """It creates an image with centered title and with given parameters."""
 
     def get(self, request, text, width, height, extension, **kwargs):
         image_size = (int(width), int(height))
@@ -38,6 +39,7 @@ class ImageView(View):
 
 
 class WordView(View):
+    """Returns random words in the given quantity."""
 
     def get(self, request, number, **kwargs):
         number = int(number)
@@ -55,6 +57,7 @@ class WordView(View):
 
 
 class ParagraphView(View):
+    """Returns random words paragraphs in the given quantity."""
 
     def get(self, request, number, **kwargs):
         number = int(number)
